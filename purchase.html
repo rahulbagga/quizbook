@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Desi Store | About</title>
+		<meta name="description" content="This is the description">
+		
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href ="css/main.css" rel ="stylesheet" type="text/css">
+        <script src="js/purchase.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="quiz.html">Quiz</a></li>
+               <li><a href="purchase.html">Purchase</a></li>
+               <li><a href="contact-us.html">Contact Us</a></li>
+           </ul>
+       </nav>
+   </header>
+
+		<form class="cart" id="cart-hplus">
+                <div id="itemsb">
+                    <div class="item">
+	                    <h2>Javascript Bootcamp</h2>
+	                    <img class="ebook-image" src="Images/boootcamp.jpg" width= "300px">
+	                    <div class="info">
+	                    <span>Price: $90</span>
+	                    </div>
+	                    <div class="order">
+	                    <label for="txt-q-bball">Quantity desired:</label>
+	                    <input type="number" min="0" id="txt-q-bball" size="3" placeholder="0">
+	                    </div>
+	                </div>
+
+	                <div class="item">
+	                    <h2>Angular JS</h2>
+
+				<img class="ebook-image" src="Images/angularjs.jpg" width ="300px">
+	                    <div class="info">
+	                    <span>Price: $25</span>
+	                    </div>
+	                    <div class="order">
+	                    <label for="txt-q-jersey">Quantity desired:</label>
+	                    <input type="number" min="0" id="txt-q-jersey" size="3" placeholder="0">
+	                    </div>
+	                </div>
+
+	                <div class="item">
+	                    <h2>Node JS</h2>
+	                      <img class="ebook-image" src="Images/nodejs.png" width ="300px">
+	                    <div class="info"><br>
+	                    <span>Price: $30</span>
+	                    </div>
+	                    <div class="order">
+	                    <label for="txt-q-power">Quantity desired:</label>
+	                    <input type="number" min="0" id="txt-q-power" size="3" placeholder="0">
+	                    </div>
+	                </div>
+                </div>
+	                
+
+	                <div id="summary">
+	                    <h2>Estimate Order</h2>
+
+	                    <div class="group state">
+	                        <label for="s-state">State (required):</label>
+	                        <select id="s-state">
+	                            <option value="">- select -</option>
+	                            <option value="CA">Brampton (7.5% tax)</option>
+	                            <option value="IL">Cambridge</option>
+	                            <option value="NH">Waterloo</option>
+	                            <option value="PA">kitchener</option>
+	                        </select>
+	                    </div>
+
+	                    <div class="group method">
+	                        <label for="r-method-pickup"><h3>Shipping and Handling:</h3></label><br>
+	                        <input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label for="r-method-pickup">Pickup (free)</label><br>
+
+	                        <input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">US Mail ($2/item)</label><br>
+
+	                        <input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">UPS ($3/item)</label><br>
+													<input type="radio" value="fedex" name="r_method" id="r-method-fedex"> <label for="r-method-fedex">Fedex ($4/item)</label><br>
+	                    </div>
+
+	                    <div class="group special"><br>
+	                        <label for="c-special-gift"><h3>Special:</h3></label><br>
+	                        <input type="checkbox" value="YES" name="c-special-gift" id="c-special-gift"> <label for="c-special-gift">This is a gift (include a card)</label><br>
+
+	                        <input type="checkbox" value="YES" name="c-special-email" id="c-special-email"> <label for="c-special-email">Sign up for our mailing list</label><br>
+
+	                        <input type="checkbox" value="YES" name="c-special-recipes" id="c-special-recipes"> <label for="c-special-recipes">Include programming basics ebook (free!)</label>
+	                    </div>
+
+	                    <div class="group notes">
+	                        <label for="txt-notes">Other notes:</label><br>
+
+	                        <textarea name="txt-notes" id="txt-notes" rows="2" placeholder="Any other comments (does not affect estimate)"></textarea>
+	                    </div>
+
+	                    <div class="group calc">
+	                        <p>
+	                        <label for="btn-estimate">Click to estimate:</label><br>
+	                        <input type="submit" value="Estimate Total" id="btn-estimate">
+	                        <input type="text" id="txt-estimate" placeholder="$0.00">
+	                        </p>
+
+	                        <div id="results"></div>
+	                    </div>
+	                </div>
+
+	                </form>
+	                <div id="id01"></div>
+
+<script src="js/jsonquery">
+  
+</script>
+<style>
+  body {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .box {
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 20px 5px;
+  }
+  button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: #0F5897;
+    border: 1px solid #0F5897;
+  }
+</style>
+<h1>Customer Testimonials</h1> 
+<p>
+  <button id="getMessage">
+    Check Reviews of E-books: 
+  </button>
+</p>
+   <p id="demo">
+       
+   </p>
+		<footer class="main-footer">
+			
+		</footer>
+
+		<script src="js/purchase.js"></script>
+	</body>
+</html>

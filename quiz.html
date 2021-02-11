@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href ="css/main.css" rel ="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+   <header>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="quiz.html">Quiz</a></li>
+               <li><a href="purchase.html">Purchase</a></li>
+               <li><a href="contact-us.html">Contact Us</a></li>
+           </ul>
+       </nav>
+   </header>
+   
+   <main>
+      <div id ="quizbox">
+         <div id="1">
+            <h1><label>Which of the following type of variable is visible everywhere in your JavaScript code?</label></h1>
+            <input type="radio" name="lp1" value="a"><!-- answer -->
+            global variable<br>
+            <input type="radio" name="lp1" value="b">
+            local variable<br>
+            <input type="radio" name="lp1" value="c">
+            Both of the above.<br>
+            <input type="radio" name="lp1" value="d">
+            None of the above.<br>
+            <button id ="q1" type="button" class="btn btn-info">Ok!</button>
+         
+             
+         </div>
+         
+         <div id="2">
+             <h1><label>Which built-in method combines the text of two strings and returns a new string?</label></h1>
+             <input type="radio" name="lp2" value="a">
+             append()<br>
+             <input type="radio" name="lp2" value="b"><!-- answer -->
+             concat()<br>
+             <input type="radio" name="lp2" value="c">
+             attach()<br>
+             <input type="radio" name="lp2" value="d">
+             None.<br>
+             <button id="q2" type="button" class="btn btn-info">Ok!</button>
+         
+         </div>
+         
+         <div id ="3">
+             <h1><label>Which built-in method returns the calling string value converted to lower case?</label></h1>
+             <input type="radio" name="lp3" value="a"><!-- answer -->
+             toLowerCase()<br>
+             <input type="radio" name="lp3" value="b">
+             toLower()<br>
+             <input type="radio" name="lp3" value="c">
+             changeCase(case)<br>
+             <input type="radio" name="lp3" value="d">
+             None of the above.<br>
+             <button id="q3" type="button" class="btn btn-info">Ok!</button>
+         </div>
+         
+         <div id ="4">
+             <h1><label>Which of the following function of Number object defines how many total digits to display of a number?</label></h1>
+             <input type="radio" name="lp4" value="a">
+             toExponential()<br>
+             <input type="radio" name="lp4" value="b">
+             toFixed()<br>
+             <input type="radio" name="lp4" value="c">
+             toLocaleString()<br>
+             <input type="radio" name="lp4" value="d"><!-- answer -->
+             toPrecision()<br>
+             <button id="q4" type="button" class="btn btn-info">Ok!</button>
+         </div>
+         
+         <div id ="5">
+             <h1><label>Which of the following function of Array object removes the first element from an array and returns that element?</label></h1>
+             <input type="radio" name="lp5" value="a">
+             reverse()<br>
+             <input type="radio" name="lp5" value="b"> <!-- answer -->
+             shift()<br>
+             <input type="radio" name="lp5" value="c">
+             slice()<br>
+             <input type="radio" name="lp5" value="d">
+             some()<br>
+             <button id="q5" type="button" class="btn btn-info">Ok!</button>
+         </div>
+         
+         <div id ="6">
+             <h1><label>Which of the following function of String object returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order?</label></h1>
+             <input type="radio" name="lp6" value="a"><!-- answer -->
+             localeCompare()<br>
+             <input type="radio" name="lp6" value="b">
+             search()<br>
+             <input type="radio" name="lp6" value="c">
+             substr()<br>
+             <input type="radio" name="lp6" value="d">
+             concat()<br>
+             <button id="q6" type="button" class="btn btn-info">Ok!</button>
+         </div>
+         
+         <div id ="7">
+             <h1><label>Which of the following function of String object creates a string to blink as if it were in a blink tag?</label></h1>
+             <input type="radio" name="lp7" value="a">
+             anchor()<br>
+             <input type="radio" name="lp7" value="b">
+             big()<br>
+             <input type="radio" name="lp7" value="c"><!-- answer -->
+             blink()<br>
+             <input type="radio" name="lp7" value="d">
+             italics()<br>
+             <button id="q7" type="button" class="btn btn-info">Ok!</button>
+         </div>
+         
+         
+      </div>
+      <br>
+      <br>
+      
+      <div id="cong">
+          Here's your final score: <br><br>
+      </div>
+      <div id ="scdiv">
+            
+             <p id ="scp">Score: 
+                 <span id="sc"></span>
+             </p> 
+      </div>
+      <div id= "sugg">
+          Our system has suggested you some books which you can use to enhance your Javascript knowledge...
+      </div>     
+          
+    <button id ="purchase" type="button" class="btn btn-primary btn-lg"><a href ="purchase.html">Purchase Now!!</a></button>
+    <button id ="back" type="button" class="btn btn-primary btn-lg">Go Back</button>
+      
+  
+   </main>
+   
+   <footer>
+       
+   </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
